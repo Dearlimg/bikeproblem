@@ -50,7 +50,7 @@ class ModelTrainer:
         models_to_train = {
             'Linear Regression': LinearRegression(),
             'Random Forest': RandomForestRegressor(
-                n_estimators=100,
+                n_estimators=1000,
                 max_depth=10,
                 random_state=self.random_state,
                 n_jobs=-1
