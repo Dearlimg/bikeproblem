@@ -91,11 +91,18 @@ bikeproblem/
 │   ├── data_preprocessor.py # 数据预处理模块
 │   ├── model_trainer.py    # 模型训练模块
 │   └── visualizer.py       # 可视化模块
+├── doc/                     # 文档目录
+│   ├── 原理讲解-大白话版.md  # 原理讲解文档
+│   ├── 结果分析报告.md      # 结果分析报告
+│   ├── 随机森林实现原理.md  # 随机森林实现详解
+│   └── 共享单车问题.docx    # 原始问题文档
 ├── output/                  # 输出目录（运行后生成）
 │   ├── *.png               # 可视化图表
 ├── main.py                  # 主程序入口
+├── analyze_results.py       # 结果分析脚本
 ├── requirements.txt         # Python依赖
-└── README.md               # 本文档
+├── README.md               # 本文档
+└── Readme.txt              # 数据集说明文档
 ```
 
 ## 安装与运行
@@ -113,8 +120,14 @@ pip install -r requirements.txt
 
 ### 3. 运行程序
 
+**主程序**（训练模型并生成可视化）：
 ```bash
 python main.py
+```
+
+**结果分析脚本**（生成详细分析报告）：
+```bash
+python analyze_results.py
 ```
 
 ### 4. 查看结果
@@ -124,6 +137,8 @@ python main.py
 - `*_residuals.png`: 残差分析图
 - `model_comparison.png`: 模型性能对比图
 - `feature_importance.png`: 特征重要性图
+
+详细的分析报告和原理讲解文档请查看 `doc/` 目录。
 
 ## 代码说明
 
