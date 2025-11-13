@@ -27,10 +27,10 @@ def main():
     data_loader = DataLoader(data_dir="data")
     
     # 选择使用每日数据或每小时数据
-    use_hourly = False  # 设置为True使用每小时数据，False使用每日数据
+    use_hourly = True  # 设置为True使用每小时数据，False使用每日数据
     
     if use_hourly:
-        df = data_loader.load_hour_data()
+        df = data_loader. load_hour_data()
     else:
         df = data_loader.load_day_data()
     

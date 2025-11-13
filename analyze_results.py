@@ -230,7 +230,8 @@ def main():
     # 1. 加载数据
     print("\n[步骤 1] 加载数据...")
     data_loader = DataLoader(data_dir="data")
-    df = data_loader.load_day_data()
+    # df = data_loader.load_day_data()
+    df = data_loader.load_hour_data()
     
     # 2. 数据预处理
     print("\n[步骤 2] 数据预处理...")
